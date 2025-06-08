@@ -17,10 +17,10 @@ console.log(1 + 5 - 2);
 
 
 console.log(8 * 5 + 2 / 1);
-// console.log((1 + 5 - 2) * 10 + 2 );
-// console.log((1 + 5 - 2) * 10 + 2 / 1 );
-// console.log(10 * 4 + 4 - 2);
-// console.log(80 - 40 + 2 / 1)
+console.log((1 + 5 - 2) * 10 + 2 );
+console.log((1 + 5 - 2) * 10 + 2 / 1 );
+console.log(10 * 4 + 4 - 2);
+console.log(80 - 40 + 2 / 1)
 
 
 /*
@@ -47,7 +47,12 @@ console.log(8 * 5 + 2 / 1);
  */
  
 
-const celsius = 12;
-const fahrenheit = 12 * 1.8 + 32 
+let celsius = 12;
+let fahrenheit = 12 * 1.8 + 32 
+
+console.log(fahrenheit);
+
+celsius = 22;
+ fahrenheit = 42 * 1.8 + 32 
 
 console.log(fahrenheit);
