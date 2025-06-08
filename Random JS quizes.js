@@ -22,6 +22,7 @@ console.log((1 + 5 - 2) * 10 + 2 / 1 );
 console.log(10 * 4 + 4 - 2);
 console.log(80 - 40 + 2 / 1)
 
+//|------------------------------------------------------------------------------------------------------------------------------------------|
 
 /*
  * Programming Quiz: Converting Temperatures
@@ -53,6 +54,35 @@ let fahrenheit = 12 * 1.8 + 32
 console.log(fahrenheit);
 
 celsius = 22;
- fahrenheit = 42 * 1.8 + 32 
+fahrenheit = 42 * 1.8 + 32 
 
 console.log(fahrenheit);
+
+//|------------------------------------------------------------------------------------------------------------------------------------------|
+
+/*
+ * Programming Quiz: Even or Odd
+ *
+ * Write an if...else statement that prints `even` if the 
+ * number is even and prints `odd` if the number is odd.
+ *
+ * Note - make sure to print only the string "even" or the string "odd"
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * 1. Your code should have a variable `number`, and include an `if...else` statement
+ * 2. Your conditional should use a strict comparison (`===` or `!==`), and use the modulo ( `%` ) operator
+ * 3. Your code should produce the expected output - "even" or "odd" using console.log() method
+ */
+ 
+ 
+// change the value of `number` to test your if...else statement
+const number = 100;
+// if statement to check to see if const number is odd or even 
+// if the modulo is equal to 1 even  , else odd 
+if (0 === number % 2){
+    console.log('even');
+ } else { 
+    console.log('odd');
+}
