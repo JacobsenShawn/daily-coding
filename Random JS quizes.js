@@ -86,3 +86,110 @@ if (0 === number % 2){
  } else { 
     console.log('odd');
 }
+
+//|------------------------------------------------------------------------------------------------------------------------------------------|
+
+/*
+ * QUIZ REQUIREMENTS
+ * 1. Your code should have a variable `musicians`, and include `if...else if...else` conditional statement
+ * 2. Your code should produce the expected output, as mentioned above. Read each condition carefully. 
+ */
+ 
+// Write a series of conditional statements that:
+// Prints "not a group" if musicians is less than or equal to 0
+// Prints "solo" if musicians is equal to 1
+// Prints "duet" if musicians is equal to 2
+// Prints "trio" if musicians is equal to 3
+// Prints "quartet" if musicians is equal to 4
+// Prints "this is a large group" if musicians is greater than 4
+
+// change the value of `musicians` to test your conditional statements
+const musicians = 4;
+
+if (musicians === 1) {
+    console.log("solo")
+} else if (musicians === 2) {
+    console.log("duet" )
+} else if (musicians === 3) {
+    console.log("trio")
+} else if (musicians === 4) {
+    console.log("quartet")
+} else{
+    console.log("this is a large group ")
+}
+
+
+
+// |-------------------------------------------------------------------------|
+
+
+
+
+// Flow Chart Directions 
+
+// Using the atm to check balance 
+
+// 1st condition  - check your balance 
+// Option 1 - true  move to next condition 
+// false - Thank youhave a nice day 
+
+//  2nd condition  - Is the account active  and balance > 0
+// Option 1 - true  Your balance is 
+// false - move to next condition 
+
+// 3rd condition - is account not active 
+// option 1 true  Your account is no longer active 
+// false -  move to next condition 
+
+// 4th conditon - is balance = 0
+// true - Your account is empty 
+// false - Your balance is negative Please contact bank 
+
+
+
+const balance = 1325.00;
+const checkBalance = true;
+const isActive = true;
+
+// To print out the account balance with decimal points (i.e. 325.00), use the .toFixed() method and pass it the number of decimal points you want to use. For example, balance.toFixed(2) returns 325.00.
+
+
+// Start only if checkBalance === true
+if (checkBalance === true) {
+    
+    
+// Cases when account is active. Now, the balance could be <, =, or > zero
+if (isActive === true && balance > 0) {
+console.log("Your balance is $" + balance.toFixed(2) + ".");
+}
+else if (isActive === true && balance === 0){
+console.log("Your account is empty.");
+}
+else if (isActive === true && balance < 0){
+console.log("Your balance is negative. Please contact bank.");
+}
+// Case when account is NOT active
+else if (isActive === false) {
+console.log("Your account is no longer active.");
+}
+}
+else {
+console.log("Thank you. Have a nice day!");
+}
+
+
+
+// Expected Output
+
+
+// Customer	balance	checkBalance	isActive	Expected Output
+// Customer1	-325	true	true	Your balance is negative. Please contact bank.
+// Customer2	35	true	true	Your balance is $35.00.
+// Customer3	35	false	true	Thank you. Have a nice day!
+// Customer4	35	true	false	Your account is no longer active.
+// Customer5	0	true	true	Your account is empty.
+// Customer6	-325	false	true	Thank you. Have a nice day!
+// Customer7	-325	true	false	Your account is no longer active.
+// Customer8	35	false	false	Thank you. Have a nice day!
+// Customer9	0	false	false	Thank you. Have a nice day!
+// Customer10	0	true	false	Your account is no longer active.
