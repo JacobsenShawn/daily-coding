@@ -309,3 +309,65 @@ console.log(size);
 
 // |--------------------------------------------------------------------------------\
 
+/*
+ * Programming Quiz - Navigating the Food Chain
+ *
+ * Use a series of ternary operator to set the category to one of the following:
+ *   - "herbivore" if an animal eats plants
+ *   - "carnivore" if an animal eats animals
+ *   - "omnivore" if an animal eats plants and animals
+ *   - undefined if an animal doesn't eat plants or animals
+ *
+ * Notes
+ *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions
+ *   - `if` statements aren't allowed ;-)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have the variables `eatsPlants`, `eatsAnimals`
+ * - Your code should include ternary statements. Do not use if....else statement. 
+ * - Your code should produce the expected output
+ */
+ 
+// change the values of `eatsPlants` and `eatsAnimals` to test your code
+// const eatsPlants = false;
+// const eatsAnimals = true;
+// let category;
+
+// // your code goes here
+// herbivore = category ? eatsPlants : eatsAnimals
+// omnivore = category ? eatsPlants : eatsAnimals
+// carnivore = category ? eatsPlants : eatsAnimals
+// omnivore = category ? eatsPlants : eatsAnimals
+// undefined = category ? eatsPlants : eatsAnimals
+
+// change the values of `eatsPlants` and `eatsAnimals` to test
+const eatsPlants = false;
+const eatsAnimals = true;
+let category;
+
+// Determine the category using nested ternary operators
+category = (eatsPlants && !eatsAnimals) ? "herbivore" :
+           (!eatsPlants && eatsAnimals) ? "carnivore" :
+           (eatsPlants && eatsAnimals) ? "omnivore" :
+           "undefined";
+
+//  Explanation:
+    // If eatsPlants is true and eatsAnimals is false, category becomes "herbivore".
+    // If eatsPlants is false and eatsAnimals is true, category becomes "carnivore".
+    // If both are true, category becomes "omnivore".
+    // If both are false, category becomes "undefined".
+
+// Output the result
+console.log(`The animal is a ${category}.`);
+// 
+// Expected Output
+// Eats Plants	Eats Animals	Expected Output
+// true      	false	         "herbivore"
+// true	        true	         "omnivore"
+// false	    true	         "carnivore"
+// false	    false	          undefined
+
+
+// |--------------------------------------------------------------------------------\
